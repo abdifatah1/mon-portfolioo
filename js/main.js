@@ -1,4 +1,39 @@
-$(".menu-mobile-icon").click(function(){ // toggle the menu when clicking on mobile menu icon
-    $(".menu-list").fadeToggle(800);
-
+$(".menu-mobile-icon").click(function(){
+  $(".menu-list").fadeToggle(800);
+  
 });
+(function($){
+  $(document).ready(function(){
+    $('#realisation img').hover(function() {
+        $(this).addClass('transition');
+
+    }, function() {
+        $(this).removeClass('transition');
+    });
+    var offset = $(".menu-list").offset().top;
+    $(document).scroll(function(){
+      var scrollTop = $(document).scrollTop();
+      if(scrollTop > offset){
+        $(".logo").hide();
+
+        $(".title a").css("color", "white");
+        $(".menu-list").css({
+          'position': 'fixed',
+          'color': 'white',
+          'background-color':'#627883',
+          'width':'100%',
+          'margin-top':'-2%'
+        });
+      }
+      else {
+        $(".menu-list").css({
+          "position": "static",
+          "margin-top": "0",
+        });
+        $(".title a").css("color", "black");
+        $(".logo").show();
+
+      }
+    });
+  });
+})(jQuery);

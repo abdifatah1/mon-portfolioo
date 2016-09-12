@@ -102,7 +102,9 @@ Author's custom styles
 /* ##################################################################### */
 /* ##########################   SMARTPHONE   ########################### */
 /* ##################################################################### */
-
+body{
+  background-color: #627883;
+}
 .header-image{
   background-image: url(../img/header.jpg);
   background-position: center;
@@ -140,7 +142,53 @@ Author's custom styles
 .title a{
   text-decoration: none;
 }
+.headlines-1{
+  position: absolute;
+  top: 30%;
+  right:35%;
+  color: white;
+  font-size: 25px;
 
+}
+.headlines-2{
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  right:8%;
+  text-align: center;
+  color: white;
+
+}
+
+#realisation{
+  display: flex;
+  flex-direction: column;
+}
+#realisation img{
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  margin-top: 10%;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+}
+
+.transition {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.competence{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    background-color: white;
+}
 
 
 
@@ -164,7 +212,9 @@ Author's custom styles
 
   .logo{
     display: block;
-    margin-right: 5%;
+    margin:1% 5% 0;
+    width: 70px;
+    height: 70px;
   }
 
   .title{
@@ -193,20 +243,27 @@ Author's custom styles
     top: 30%;
     right:35%;
     color: white;
-    opacity: 0.5;
+    font-size: 50px;
+
   }
   .headlines-2{
-    font-size: 20px;
+    font-size: 40px;
     position: absolute;
     top: 40%;
-    right:20%;
+    right:8%;
+    text-align: center;
     color: white;
-    opacity: 0.5;
 
   }
-
-
-
+  #realisation{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+  }
+  #realisation img{
+    width: 300px;
+    height: 200px;
+  }
   /* ##################################################################### */
   /* ############################   DESKTOPS   ########################### */
   /* ##################################################################### */
