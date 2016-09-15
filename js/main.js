@@ -1,6 +1,6 @@
 $(".menu-mobile-icon").click(function(){
   $(".menu-list").fadeToggle(800);
-  
+
 });
 (function($){
   $(document).ready(function(){
@@ -22,7 +22,8 @@ $(".menu-mobile-icon").click(function(){
           'color': 'white',
           'background-color':'#627883',
           'width':'100%',
-          'margin-top':'-2%'
+          'margin-top':'-2%',
+          'z-index': '1'
         });
       }
       else {
