@@ -2,6 +2,14 @@ $(".menu-mobile-icon").click(function(){
   $(".menu-list").fadeToggle(800);
 
 });
+$(window).resize(function(){
+
+       if ($('.logo').width() == 320 ){
+         $("this").hide();
+
+       }
+
+});
 (function($){
   $(document).ready(function(){
     $('#realisation img').hover(function() {
@@ -17,6 +25,7 @@ $(".menu-mobile-icon").click(function(){
         $(".logo").hide();
 
         $(".title a").css("color", "white");
+
         $(".menu-list").css({
           'position': 'fixed',
           'color': 'white',
@@ -31,7 +40,7 @@ $(".menu-mobile-icon").click(function(){
           "position": "static",
           "margin-top": "0",
         });
-        $(".title a").css("color", "black");
+        // $(".title a").css("color", "black");
         $(".logo").show();
 
       }
